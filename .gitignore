@@ -1,10 +1,21 @@
+# Environment and secrets
 .env
+.env.*
+!.env.example
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Local databases and OCR exports
 *.db
 *.sqlite
 *.sqlite3
 *.csv
-__pycache__/
-.venv/
-venv/
+
+# Runtime files
 runtime_data/
 logs/
+*.log
